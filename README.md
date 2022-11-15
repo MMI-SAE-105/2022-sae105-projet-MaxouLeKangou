@@ -1,6 +1,6 @@
-- NOM : 
-- PRÉNOM :
-- URL du site :
+- NOM : LEGRAND
+- PRÉNOM : Maxime
+- URL du site : bessarion.fr
 - URL FIGMA :
 
 # Structure de départ pour le projet individuel.
