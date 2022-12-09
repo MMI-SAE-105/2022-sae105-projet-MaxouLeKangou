@@ -62,6 +62,7 @@
     transition: 0.3s;
     outline: none;
     padding: 0 20px;
+    width: 100%;
 }
 .other__form--section textarea {
     height: 150px;
