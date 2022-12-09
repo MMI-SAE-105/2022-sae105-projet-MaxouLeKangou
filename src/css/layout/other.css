@@ -44,16 +44,16 @@
     left: 50px;
 }
 .other__form--first-name label {
-    top: 305px;
+    top: 285px;
 }
 .other__form--last-name label {
-    top: 382px;
+    top: 362px;
 }
 .other__form--mail label {
-    top: 458px;
+    top: 438px;
 }
 .other__form--message label {
-    top: 536px;
+    top: 516px;
 }
 .other__form--section input {
     height: 50px;
