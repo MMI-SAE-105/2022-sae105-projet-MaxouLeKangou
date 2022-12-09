@@ -62,6 +62,7 @@
     transition: 0.3s;
     outline: none;
     padding: 0 20px;
+    margin-right: 30px;
 }
 .other__form--section textarea {
     height: 150px;
@@ -70,6 +71,7 @@
     transition: 0.3s;
     outline: none;
     padding: 20px;
+    margin-right: 30px;
 }
 .other__form--section input:focus, textarea:focus {
     border: 1px solid rgba(0, 0, 0, 1);
