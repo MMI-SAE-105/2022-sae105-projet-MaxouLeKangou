@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuOpen:false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>CAPSUL - MENTIONS</title>
+</head>
+<body id="body">
+    <header class="header">
+
+        <button class="header__nav--back">
+            <a href="index.html"><img src="../../img/icons/chevron.svg" alt="Arrow back to last page"></a>
+        </button>
+
+
+        <nav class="header__nav" x-show="menuOpen">
+            <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
+                <img src="../../img/icons/cross.svg" alt="Icons Hambuger">
+            </button>
+            <img class="header__nav--logo" src="../../img/logo/white.svg" alt="Logo CAPSUL">
+            
+            <div class="header__nav--link">
+                <ul class="header__nav--top">
+                    <li class="header__nav--item1"><a href="index.html">Home</a></li>
+                    <li class="header__nav--item2"><a href="projects.html">Projects</a></li>
+                    <li class="header__nav--item3"><a href="">Articles</a></li>
+                </ul>
+                <ul class="header__nav--bottom">
+                    <li class="header__nav--item4"><a href="contact.html">Contact</a></li>
+                    <li class="header__nav--item5"><a href="glossary.html">Glossary</a></li>
+                    <li class="header__nav--item6"><a href="">Mentions</a></li>
+                    <a class="header__nav--lang" href=""><img src="../../img/icons/uk.svg" alt="Icons Langage"></a>
+                </ul>
+            </div>
+
+        </nav>
+        <button class="header__btn" @click="menuOpen = ! menuOpen">
+            <img src="../../img/icons/hamburger.svg" alt="Icons Hambuger">
+        </button>
+        <img class="header__logo" src="../../img/logo/black.svg" alt="Logo CAPSUL">
+    </header>
+
+
+    <main class="other">
+        <h1 class="other__title">Mentions</h1>
+        <p class="other__paragraph">“project carried out within the framework of a in the department <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a>“</p>
+    </main>
+</body>
+</html>

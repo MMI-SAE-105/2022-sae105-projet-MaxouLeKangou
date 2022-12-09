@@ -1,0 +1,20 @@
+:root {
+    /* Color styles */
+    --white: #FFFFFF;
+    --black: #000000;
+
+    /* Text-size styles */
+    --heading-1: 30px;
+    --heading-2: 26px;
+
+    --article_heading-1: 17px;
+    --article_heading-2: 15px;
+
+    --paragraph: 13px;
+    --othertypo: 15px;
+
+    /* Font styles */
+    --font-family: 'Poppins', sans-serif;
+
+    --padding: 30px;
+}
