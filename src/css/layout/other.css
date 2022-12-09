@@ -41,19 +41,11 @@
     background: #ffffff;
     margin: 0;
     padding: 0 5px;
-    left: 50px;
+    left: 20px;
+    top: -5px;
 }
-.other__form--first-name label {
-    top: 285px;
-}
-.other__form--last-name label {
-    top: 362px;
-}
-.other__form--mail label {
-    top: 438px;
-}
-.other__form--message label {
-    top: 516px;
+.other__form--first-name, .other__form--last-name, .other__form--mail, .other__form--message {
+    position: relative;
 }
 .other__form--section input {
     height: 50px;
