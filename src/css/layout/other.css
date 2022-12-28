@@ -86,7 +86,7 @@
     flex-direction: column;
     gap: 25px;
 }
-.project__content h1,a {
+.project__name, .project__owner {
     display: block;
     text-align: center;
 }
