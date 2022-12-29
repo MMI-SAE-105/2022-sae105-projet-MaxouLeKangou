@@ -13,8 +13,8 @@
         <img src="../../img/icons/chevron.svg" alt="">
     </a>
     <header class="header">
-        <nav class="header__nav" x-show="menuOpen">
 
+        <nav class="header__nav" x-show="menuOpen" x-transition.duration.600ms.origin.right>
             <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
                 <img src="../../img/icons/cross.svg" alt="Icons Hambuger">
             </button>
@@ -22,15 +22,15 @@
             
             <div class="header__nav--link">
                 <ul class="header__nav--top">
-                    <li class="header__nav--item1" style="text-decoration: underline;"><a href="">Home</a></li>
+                    <li class="header__nav--item1"><a href="index.html" style="text-decoration: underline;">Acceuil</a></li>
                     <li class="header__nav--item2"><a href="projects.html">Projects</a></li>
                     <li class="header__nav--item3"><a href="">Articles</a></li>
                 </ul>
                 <ul class="header__nav--bottom">
                     <li class="header__nav--item4"><a href="contact.html">Contact</a></li>
-                    <li class="header__nav--item5"><a href="glossary.html">Glossary</a></li>
+                    <li class="header__nav--item5"><a href="glossary.html">Glossaire</a></li>
                     <li class="header__nav--item6"><a href="mentions.html">Mentions</a></li>
-                    <a class="header__nav--lang" href=""><img src="../../img/icons/uk.svg" alt="Icons Langage"></a>
+                    <a class="header__nav--lang" href="../en/index.html"><img src="../../img/icons/fr.svg" alt="Icons Langage"></a>
                 </ul>
             </div>
 
@@ -43,49 +43,49 @@
 
     <main class="index">
         <article class="index__about">
-            <h1 class="index__about--title">About</h1>
-            <p class="index__about--text"><span style="font-style: italic;">Capsul</span> is a project realized by Maxime LEGRAND. The goal of his project is to make a kind of "time capsule". To save some things of this time, in order to rediscover them in a more or less near future.</p>
+            <h1 class="index__about--title">À propos</h1>
+            <p class="index__about--text"><span style="font-style: italic;">Capsul</span> est un projet réalisé par Maxime LEGRAND. Le but de son projet est de réaliser une sorte de "capsule temporelle". De sauver certaines choses de cette époque, afin de les redécouvrir dans un futur plus ou moins proche.</p>
             <div class="index__about--img"><img src="../../img/about/about.webp" alt="Image of the creator"></div>
             <!-- <span class="index__about--svg"><img src="../../img/icons/item-1.svg" alt="It's Me arrow"></span> -->
             <button class="index__about--btn">
-                <a href="#child"><img src="../../img/icons/chevron.svg" alt="Arrow Down"></a>
+                <a href="#place"><img src="../../img/icons/chevron.svg" alt="Arrow Down"></a>
             </button>
         </article>
 
 
-        <article id="child" class="index__place">
-            <h1 class="index__place--title">Place</h1>
-            <p class="index__place--text">Paris is the capital of France. An architect named Vincent Callebaut imagines the new Paris of 2050 with vegetal towers.</p>
+        <article id="place" class="index__place">
+            <h1 class="index__place--title">Lieu</h1>
+            <p class="index__place--text">Paris est la capitale de la France. Un architecte nommé Vincent Callebaut imagine le nouveau Paris de 2050 avec des tours végétales.</p>
             <!-- <span class="float">See more !</span> -->
             <a class="index__place--img" href="place/article.html"><img src="../../img/frises/paris.webp" alt="Image of a future Paris" class="article__img"></a>
         </article>
-        <article class="index__book">
-            <h1 class="index__book--title">Book</h1>
-            <p class="index__book--text"><span>The Cartographers</span> is a novel by S.E. GROVE. It is a fantasy story that brings together cartography and adventure in a world turned upside down.</p>
+        <article id="book" class="index__book">
+            <h1 class="index__book--title">Livre</h1>
+            <p class="index__book--text"><span>Les Cartographes</span> est un roman de S.E. GROVE. C'est une histoire fantastique qui réunit cartographie et aventure dans un monde sens dessus dessous.</p>
             <!-- <span>Click !</span> -->
             <a class="index__book--img" href="book/article.html"><img src="../../img/articles/book.webp" alt="Image from the novel The Cartographers" class="article__img"></a>
         </article>
-        <article class="index__music">
-            <h1 class="index__music--title">Music</h1>
-            <p class="index__music--text"><span>Back To You</span> is a song by Selena Gomez. It is part of the original soundtrack of the series <span>13 Reason Why</span></p>
+        <article id="music" class="index__music">
+            <h1 class="index__music--title">Musique</h1>
+            <p class="index__music--text"><span>Back To You</span> est une chanson de Selena Gomez. Elle fait partie de la bande originale de la série <span>13 Reason Why</span>.</p>
             <!-- <span>Touch !</span> -->
             <a class="index__music--img" href="music/article.html"><img src="../../img/articles/music.webp" alt="Image of Selena Gomez" class="article__img"></a>
         </article>
-        <article class="index__movie">
-            <h1 class="index__movie--title">Movie</h1>
-            <p class="index__movie--text"><span>Ready Player One</span> is a film directed by Steven Spielberg. It is an adaptation of the novel Player One by Ernest Cline.</p>
+        <article id="movie" class="index__movie">
+            <h1 class="index__movie--title">Film</h1>
+            <p class="index__movie--text"><span>Ready Player One</span> est un film réalisé par Steven Spielberg. Il s'agit d'une adaptation du roman Player One d'Ernest Cline.</p>
             <!-- <span>More !</span> -->
             <a class="index__movie--img" href="movie/article.html"><img src="../../img/movies/rpo.webp" alt="Image of movie Ready Player One" class="article__img"></a>
         </article>
-        <article class="index__regret">
+        <article id="regret" class="index__regret">
             <h1 class="index__regret--title">Regret</h1>
-            <p class="index__regret--text">The world is still in overconsumption. Recycling is only partial and waste is left to be abandoned without any other life.</p>
+            <p class="index__regret--text">Le monde est toujours en surconsommation. Le recyclage n'est que partiel et les déchets sont laissés à l'abandon sans autre vie.</p>
             <!-- <span>Go !</span> -->
             <a class="index__regret--img" href="regret/article.html"><img src="../../img/articles/regret.webp" alt="Image of an island of waste" class="article__img"></a>
         </article>
-        <article class="index__hope">
-            <h1 class="index__hope--title">Hope</h1>
-            <p class="index__hope--text">The world is trying to wake up. Global warming is frightening and we are now trying to limit it by creating green spaces.</p>
+        <article id="hope" class="index__hope">
+            <h1 class="index__hope--title">Espoir</h1>
+            <p class="index__hope--text">Le monde essaie de se réveiller. Le réchauffement climatique est effrayant et nous essayons maintenant de le limiter en créant des espaces verts.</p>
             <!-- <span>See !</span> -->
             <a class="index__hope--img" href="hope/article.html"><img src="../../img/articles/hope.webp" alt="Image of a plant column" class="article__img"></a>
         </article>
@@ -103,7 +103,7 @@
             <li class="footer__social--item2"><a href=""><img src="../../img/icons/instagram.svg" alt="Logo Instagram"></a></li>
             <li class="footer__social--item3"><a href=""><img src="../../img/icons/dribbble.svg" alt="logo Dribbble"></a></li>
         </ul>
-        <a class="footer__mailto" href="mailto:maxime.legrand02@edu.univ-fcomte.fr">send a mail</a>
+        <a class="footer__mailto" href="mailto:maxime.legrand02@edu.univ-fcomte.fr">envoyer un mail</a>
         <p class="footer__copyright">&copy; Maxime Legrand B1</p>
 
     </footer>
