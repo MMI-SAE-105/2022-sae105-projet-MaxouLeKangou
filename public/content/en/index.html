@@ -13,7 +13,7 @@
         <img src="../../img/icons/chevron.svg" alt="">
     </a>
     <header class="header">
-        <nav class="header__nav" x-show="menuOpen">
+        <nav class="header__nav" x-show="menuOpen" x-transition.duration.600ms.origin.right>
 
             <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
                 <img src="../../img/icons/cross.svg" alt="Icons Hambuger">
