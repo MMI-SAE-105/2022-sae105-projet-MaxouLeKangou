@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuOpen:false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>CAPSUL - HOME</title>
+</head>
+<body id="body">
+    <a href="#" class="scroll">
+        <img src="../../img/icons/chevron.svg" alt="">
+    </a>
+    <header class="header">
+        <nav class="header__nav" x-show="menuOpen">
+
+            <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
+                <img src="../../img/icons/cross.svg" alt="Icons Hambuger">
+            </button>
+            <img class="header__nav--logo" src="../../img/logo/white.svg" alt="Logo CAPSUL">
+            
+            <div class="header__nav--link">
+                <ul class="header__nav--top">
+                    <li class="header__nav--item1" style="text-decoration: underline;"><a href="">Home</a></li>
+                    <li class="header__nav--item2"><a href="projects.html">Projects</a></li>
+                    <li class="header__nav--item3"><a href="">Articles</a></li>
+                </ul>
+                <ul class="header__nav--bottom">
+                    <li class="header__nav--item4"><a href="contact.html">Contact</a></li>
+                    <li class="header__nav--item5"><a href="glossary.html">Glossary</a></li>
+                    <li class="header__nav--item6"><a href="mentions.html">Mentions</a></li>
+                    <a class="header__nav--lang" href=""><img src="../../img/icons/uk.svg" alt="Icons Langage"></a>
+                </ul>
+            </div>
+
+        </nav>
+        <button class="header__btn" @click="menuOpen = ! menuOpen">
+            <img src="../../img/icons/hamburger.svg" alt="Icons Hambuger">
+        </button>
+        <img class="header__logo" src="../../img/logo/black.svg" alt="Logo CAPSUL">
+    </header>
+
+    <main class="index">
+        <article class="index__about">
+            <h1 class="index__about--title">About</h1>
+            <p class="index__about--text"><span style="font-style: italic;">Capsul</span> is a project realized by Maxime LEGRAND. The goal of his project is to make a kind of "time capsule". To save some things of this time, in order to rediscover them in a more or less near future.</p>
+            <div class="index__about--img"><img src="../../img/about/about.webp" alt="Image of the creator"></div>
+            <!-- <span class="index__about--svg"><img src="../../img/icons/item-1.svg" alt="It's Me arrow"></span> -->
+            <button class="index__about--btn">
+                <a href="#child"><img src="../../img/icons/chevron.svg" alt="Arrow Down"></a>
+            </button>
+        </article>
+
+
+        <article id="child" class="index__place">
+            <h1 class="index__place--title">Place</h1>
+            <p class="index__place--text">Paris is the capital of France. An architect named Vincent Callebaut imagines the new Paris of 2050 with vegetal towers.</p>
+            <!-- <span class="float">See more !</span> -->
+            <a class="index__place--img" href="place/article.html"><img src="../../img/frises/paris.webp" alt="Image of a future Paris" class="article__img"></a>
+        </article>
+        <article class="index__book">
+            <h1 class="index__book--title">Book</h1>
+            <p class="index__book--text"><span>The Cartographers</span> is a novel by S.E. GROVE. It is a fantasy story that brings together cartography and adventure in a world turned upside down.</p>
+            <!-- <span>Click !</span> -->
+            <a class="index__book--img" href="book/article.html"><img src="../../img/articles/book.webp" alt="Image from the novel The Cartographers" class="article__img"></a>
+        </article>
+        <article class="index__music">
+            <h1 class="index__music--title">Music</h1>
+            <p class="index__music--text"><span>Back To You</span> is a song by Selena Gomez. It is part of the original soundtrack of the series <span>13 Reason Why</span></p>
+            <!-- <span>Touch !</span> -->
+            <a class="index__music--img" href="music/article.html"><img src="../../img/articles/music.webp" alt="Image of Selena Gomez" class="article__img"></a>
+        </article>
+        <article class="index__movie">
+            <h1 class="index__movie--title">Movie</h1>
+            <p class="index__movie--text"><span>Ready Player One</span> is a film directed by Steven Spielberg. It is an adaptation of the novel Player One by Ernest Cline.</p>
+            <!-- <span>More !</span> -->
+            <a class="index__movie--img" href="movie/article.html"><img src="../../img/movies/rpo.webp" alt="Image of movie Ready Player One" class="article__img"></a>
+        </article>
+        <article class="index__regret">
+            <h1 class="index__regret--title">Regret</h1>
+            <p class="index__regret--text">The world is still in overconsumption. Recycling is only partial and waste is left to be abandoned without any other life.</p>
+            <!-- <span>Go !</span> -->
+            <a class="index__regret--img" href="regret/article.html"><img src="../../img/articles/regret.webp" alt="Image of an island of waste" class="article__img"></a>
+        </article>
+        <article class="index__hope">
+            <h1 class="index__hope--title">Hope</h1>
+            <p class="index__hope--text">The world is trying to wake up. Global warming is frightening and we are now trying to limit it by creating green spaces.</p>
+            <!-- <span>See !</span> -->
+            <a class="index__hope--img" href="hope/article.html"><img src="../../img/articles/hope.webp" alt="Image of a plant column" class="article__img"></a>
+        </article>
+    </main>
+
+
+    <footer class="footer">
+
+        <img class="footer__logo" src="../../img/logo/white.svg" alt="Logo CAPSUL">
+        <q class="footer__mention">
+            projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a>
+        </q>
+        <ul class="footer__social">
+            <li class="footer__social--item1"><a href=""><img src="../../img/icons/discord.svg" alt="Logo discord"></a></li>
+            <li class="footer__social--item2"><a href=""><img src="../../img/icons/instagram.svg" alt="Logo Instagram"></a></li>
+            <li class="footer__social--item3"><a href=""><img src="../../img/icons/dribbble.svg" alt="logo Dribbble"></a></li>
+        </ul>
+        <a class="footer__mailto" href="mailto:maxime.legrand02@edu.univ-fcomte.fr">send a mail</a>
+        <p class="footer__copyright">&copy; Maxime Legrand B1</p>
+
+    </footer>
+</body>
+</html>
