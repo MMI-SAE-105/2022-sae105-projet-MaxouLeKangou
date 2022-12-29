@@ -57,9 +57,13 @@
 .header__nav--bottom li a {
     filter: invert(0.5);
 }
-
+a.header__nav--lang {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 180px;
+}
 .header__nav--lang img {
-    margin-top: 25px;
     width: 30px;
     height: 30px;
 }
