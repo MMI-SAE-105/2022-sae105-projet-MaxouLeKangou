@@ -61,6 +61,24 @@
 .index__about--img img {
     margin: 0 auto;
 }
+.index__about span, .index__place span, .index__book span, .index__music span, .index__place span, .index__movie span, .index__regret span, .index__hope span {
+    display: inline-block;
+    position: relative;
+    height: 0;
+
+}
+.index__svg {
+    position: absolute;
+}
+.index__svg img {
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 105px;
+    height: 105px;
+    object-fit: fill;
+}
 
 .index button {
     display: block;
